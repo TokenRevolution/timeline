@@ -1,9 +1,9 @@
 <html>
   <head>
-    <title>Timeline</title>
+    <title>TImeLine</title>
   </head>
   <style>
-  $primary: #fc5a7d
+$primary: #fc5a7d
 $secondary: #7d6dfb
 $dark: #18294f
 $timeline-1: #fec541
@@ -259,6 +259,7 @@ body
       opacity: 1
       transform: translateX(0)
       z-index: 5
+    &.prev
       height: auto
       opacity: 0.4
       transform: translateX(-105%)
@@ -278,7 +279,7 @@ body
       width: 100%
   </style>
   <body>
-  <div class="body-wrap">
+        <div class="body-wrap">
 <!-- # component starts -->
   <div class="pres-timeline" id="this-timeline">
 <!-- ###   -->
@@ -362,8 +363,8 @@ body
   </div>
 <!-- # component ends -->
 </div>
-<script>
-class PRESTimeline {
+    <script>
+      class PRESTimeline {
   
   base: HTMLElement
   periodContainer: HTMLElement
@@ -654,6 +655,6 @@ $(document).ready(function(){
   }
   let timeline = new PRESTimeline( $('#this-timeline'), colorcode )
 })
-</script>
+    </script>
   </body>
 </html>
